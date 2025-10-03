@@ -1,0 +1,438 @@
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+} 
+body
+{
+    box-sizing: border-box;
+    height: 2000px;
+    height: 2000px;  
+    overflow-x: hidden; 
+    margin: 0;
+    padding: 0; 
+}
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #FAF4EC;
+}
+#Arabic
+{
+    cursor: pointer;
+}
+.logo
+{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img
+{
+    width: 15%;
+    cursor: pointer;
+}
+.right
+{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.flag 
+{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#user
+{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid white;
+    background-color: white;
+    cursor: pointer;
+}
+#flag
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid white;
+    background-color: white;
+    align-content: center;
+    
+}
+.hero 
+{
+    position: relative;
+    padding: 80px 20px;
+    background-color: #FAF4EC;
+    text-align: center;
+    height: 400px;
+}
+
+.hero h1 
+{
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.search-container 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-box 
+{
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 30px;
+    padding: 10px 15px;
+    width: 600px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.search-box input 
+{
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 16px;
+    padding: 5px;
+    width: 400px;
+}
+
+.cta-button 
+{
+    background-color: #FF6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.food-images 
+{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.left-img 
+{
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 280px;
+    transform: scaleX(-1);
+}
+
+.right-img 
+{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 280px;
+}
+.info-section 
+{
+    text-align: center;
+    margin: 20px auto;
+    max-width: 950px;
+}
+
+.info-section p 
+{
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    position: relative;
+    left:70px;
+    max-width: 850px;
+}
+.cuisines 
+{
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.cuisines 
+{
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.flex-container 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.overlay 
+{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+    padding: 15px;
+    text-align: left;
+    color: white;
+}
+
+h3 
+{
+    font-size: 18px;
+}
+
+p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .flex-item {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .flex-item {
+        width: 100%;
+    }
+}
+
+.flex-item {
+    position: relative;
+    width: 24%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.cursor 
+{
+    position: absolute;
+    bottom: 0px;
+    right: 0px; 
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+    background-color: #FF6600;
+}
+
+.flex-item:hover .cursor
+{
+    opacity: 1;
+}
+
+i 
+{
+    padding: 8px;
+    font-size: 20px;
+    color: white;
+}
+
+.offer
+{
+    position: relative;
+    width: 770px;
+    height: 400px;
+    overflow: hidden; 
+}
+
+.image 
+{ 
+    width: 100%; 
+    height: auto; 
+    transition: transform 0.3s ease; 
+}
+
+.image-container 
+{ 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.offer:hover .image 
+{ 
+    transform: scale(1.05); 
+}
+
+h2
+{
+    position: relative;
+    left: 70px;
+    margin-bottom: 10px;
+}
+
+.socialmedia 
+{ 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.left-iphone
+{
+    margin-right: 50px;
+    img 
+    {
+        width: 280px;
+        height: auto;
+    }
+}
+
+.right-apps
+{
+    img 
+    {
+        width: 150px;
+        height: auto;
+    }
+    h2 
+    {
+        left: 0;
+    }
+}
+
+footer 
+{ 
+    background-color: #333; 
+    color: white; 
+    padding:40px 360px; 
+    text-align: center; 
+    position: relative; 
+}
+
+.links
+{ 
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.a 
+{
+    color: #999; 
+    text-decoration: none; 
+}
+
+.centered-hr 
+{ 
+    margin: 20px auto; 
+    border: 0; 
+    border-top: 1px solid #666; 
+}
+
+.footer-content 
+{
+    color: white;
+    margin: 20px auto; 
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap;
+    gap: 60px;
+    text-align: left;
+}
+
+.footer-section
+{ 
+    flex: 1; 
+    min-width: 80px; 
+    h4 
+    {
+        color: #999; 
+    }
+}
+
+.social-media 
+{ 
+    text-align: left; 
+}
+
+.social-icons 
+{ 
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px; 
+    font-size: 24px; 
+}
+
+.social-icons a 
+{ 
+    color: white; 
+    text-decoration: none; 
+    transition: 0.3s; 
+}
+
+.social-icons i:hover 
+{ 
+    color: #f97316; 
+}
+
+.footer-bottom
+{ 
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin: 20px auto;
+}
+
+.contact-button 
+{
+    width: 180px; 
+    position: absolute; 
+    bottom: 0px; 
+    right: 8px; 
+    background-color: #f97316; 
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.a:hover 
+{ 
+    color: #ff8000; 
+} 
